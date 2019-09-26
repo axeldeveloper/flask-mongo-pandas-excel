@@ -15,6 +15,6 @@
 - [x] async
 - [x] mongo
 - [x] sqlite
-- [ ] redis
-- [ ] lambda
+- [x] pipenv
+- [x] excel
 

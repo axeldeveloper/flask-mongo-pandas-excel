@@ -22,8 +22,8 @@ VIO  = "./provider/Violencia.xlsx"
 
 con=Conexao_SQLLITE('nome')
 
-#EXECELS = [AGUA, SEGU,  SEMI, VIO]
-EXECELS = [SEMI]
+EXECELS = [AGUA, SEGU,  SEMI, VIO]
+#EXECELS = [SEMI]
 for row in EXECELS:
     print(row)
 

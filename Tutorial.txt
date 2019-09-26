@@ -34,9 +34,24 @@ D:\Desenvolvimento\python\flask-by-example> D:\Desenvolvimento\python\py_virtual
 "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="C:\mongo-data" 
 
 
+pipenv install -r requirements.txt
+
+
 
 ### Debiam 
 Successfully created virtual environment! 
 Virtualenv location: /root/.local/share/virtualenvs/flask-mongo-pandas-excel-pVjF4Rlf
 Launching subshell in virtual environment…
 root@axel:/home/axel/Dev/python/flask-mongo-pandas-excel#  . /root/.local/share/virtualenvs/flask-mongo-pandas-excel-pVjF4Rlf/bin/activate
+
+
+
+Download the binary package, and then unpack it with:
+
+tar xvf sqlstudio-X.Y.Z.tar.xz
+
+where X.Y.Z is the version number – 3.0.7 at the time of writing – and SQLiteStudio is ready to use.
+
+You can run it from within its own directory by typing
+
+./sqlstudio
