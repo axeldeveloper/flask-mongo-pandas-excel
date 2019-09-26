@@ -1,0 +1,42 @@
+Entrar em C:\Python37>
+
+$ C:\Python37>
+
+listar dependencias
+$ C:\Python37> pip3.7 list
+    pip        19.0.3
+    setuptools 40.8.0
+
+instalar virtual env  
+$ C:\Python37> pip3.7 install virtualenv
+
+#listar dependencias
+$ C:\Python37> pip3.7 list
+pip        19.0.3
+setuptools 40.8.0
+virtualenv 16.6.0
+
+#pip freeze > requirements.txt
+
+#criando virtual env env_py37
+$ C:\Python37> python.exe  -m virtualenv D:\Desenvolvimento\python\py_virtualenvs\env_py37
+
+#entrar na sua area de trabalho
+C:\Python37> cd D:\Desenvolvimento\python\flask-by-example>
+
+#activando env
+D:\Desenvolvimento\python\flask-by-example> D:\Desenvolvimento\python\py_virtualenvs\env_py37\Scripts\activate.bat
+
+#resultado
+(env_py37) D:\Desenvolvimento\python\flask-by-example>
+
+#Iniciando o mongo 
+"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="C:\mongo-data" 
+
+
+
+### Debiam 
+Successfully created virtual environment! 
+Virtualenv location: /root/.local/share/virtualenvs/flask-mongo-pandas-excel-pVjF4Rlf
+Launching subshell in virtual environment…
+root@axel:/home/axel/Dev/python/flask-mongo-pandas-excel#  . /root/.local/share/virtualenvs/flask-mongo-pandas-excel-pVjF4Rlf/bin/activate
