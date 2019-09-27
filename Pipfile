@@ -37,6 +37,7 @@ Jinja2 = "==2.10.1"
 MarkupSafe = "==1.1.1"
 Werkzeug = "==0.15.4"
 XlsxWriter = "==1.1.8"
+aiosqlite = "*"
 
 [requires]
 python_version = "3.7" # mudar
