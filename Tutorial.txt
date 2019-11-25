@@ -38,7 +38,7 @@ D:\Desenvolvimento\python\flask-by-example> D:\Desenvolvimento\python\py_virtual
 
 pipenv install -r requirements.txt
 
-
+Install psycopg2-binary instead of psycopg2.
 
 ### Debiam 
 Successfully created virtual environment! 
@@ -59,3 +59,4 @@ You can run it from within its own directory by typing
 ./sqlstudio
 
 
+/usr/local/pgsql-11/pg_dump --file "/var/lib/pgadmin/storage/axelpatton_gmail.com/bkp_ega_docker" --host "ec2-23-21-160-38.compute-1.amazonaws.com" --port "5432" --username "zqliekrizhkwsi" --no-password --verbose --format=c --blobs --encoding "UTF8" --table "public.django_migrations" "da0kq4ihbshuko"
