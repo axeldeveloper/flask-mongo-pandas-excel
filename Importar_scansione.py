@@ -17,7 +17,7 @@ import psycopg2
 
 TEST_DB = 'nome.db'
 
-URI_PG = 'postgres://zqliekrizhkwsi:1dec7157e5a2c73b45b1ca758edb4ada4b2844fe60802a2471a9e82f781bb61f@ec2-23-21-160-38.compute-1.amazonaws.com:5432/da0kq4ihbshuko'
+URI_PG = ''
 
 query = " SELECT * FROM Pessoa_Fisica \
         where  cep is null \
