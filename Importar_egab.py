@@ -14,7 +14,7 @@ file_ok  = "Import_ok.txt"
 DATE_CURRENT = datetime.today()
 
 
-URI_PG = 'postgres://zqliekrizhkwsi:1dec7157e5a2c73b45b1ca758edb4ada4b2844fe60802a2471a9e82f781bb61f@ec2-23-21-160-38.compute-1.amazonaws.com:5432/da0kq4ihbshuko'
+URI_PG = ''
 
 
 SQ_SELECT_PESSOA = '''SELECT * FROM PESSOA_FISICA WHERE CEP IS NOT NULL AND importado IS NULL ORDER BY ENDERECO, BAIRRO LIMIT 100 '''
@@ -179,13 +179,13 @@ async def grava_endereco(conn, end , num , comp,  local, bairro,  cep):
 
 async def run1():
     conn = await asyncpg.connect(
-            user='zqliekrizhkwsi', 
-            password='1dec7157e5a2c73b45b1ca758edb4ada4b2844fe60802a2471a9e82f781bb61f',
-            database='da0kq4ihbshuko', 
-            host='ec2-23-21-160-38.compute-1.amazonaws.com', 
+            user='zqliekr', 
+            password='b45b1ca758edb4ada4b2844fe60802a2471a9e82f781bb61f',
+            database='da0kq4', 
+            host='ec2-23-21.compute-1.amazonaws.com', 
             port=5432)
     
-    #conn = await asyncpg.connect('postgres://zqliekrizhkwsi:1dec7157e5a2c73b45b1ca758edb4ada4b2844fe60802a2471a9e82f781bb61f@ec2-23-21-160-38.compute-1.amazonaws.com:5432/da0kq4ihbshuko')
+   
     rows = await conn.fetch(PG_SELECT_PESSOA)
     for row in rows:
             id = row[0]
