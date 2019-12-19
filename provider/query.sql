@@ -1,3 +1,82 @@
+select  rowid,  * from cidadao order by nome_completo , telefone_contato  asc;
+
+--delete from cidadao where  rowid in (115);
+--
+select  rowid, nome_completo, endereco, cidade , telefone  from cadastro_6970  
+where 
+rowid > 0
+ORDER BY nome_completo asc; 
+
+--6968  -> 11863
+select  MAX(rowid) from cadastro_6970; 
+select  count(rowid) from cadastro_6970; 
+--6968 + 4895
+
+-- cadastro_6970   cadastro_4898
+update cadastro_6970 
+   set endereco =  upper(endereco)
+   -- set cidade =  upper(cidade)
+   -- set cidade =  REPLACE(cidade,'_MS','')
+   -- set endereco =  REPLACE(endereco,'R.','RUA ')
+   -- set telefone =  REPLACE(telefone,'-','')
+    --set cidade =  'CAMPO GRANDE'
+where 
+    --cidade like '%Campo%' ; 
+    rowid  > 0 ; 
+
+
+
+
+--select * from cadastro_6970 where sexo like '%Fe%'
+
+--INSERT INTO cadastro_6970 
+--SELECT *
+--FROM cadastro_4898;
+
+
+-- rowid, nome_completo, endereco, cidade , telefone 
+
+--DELETE FROM TableName
+--WHERE  ID NOT IN () 
+
+select count(*) from  cadastro_4898 ;
+delete from cadastro_6970 where rowid in (7259, 7285, 434, 8028, 1433);
+
+SELECT rowid, *  FROM cadastro_6970 where nome_completo = 'JUCIANY OJEDA ROJAS FERREIRA';
+
+
+SELECT nome_completo,
+       COUNT(*) TotalCount
+FROM   cadastro_6970
+GROUP  BY nome_completo
+HAVING COUNT(*) > 1
+ORDER  BY COUNT(*) DESC ;
+
+
+DELETE
+FROM
+    Mytable
+WHERE
+    RowID NOT IN (
+        SELECT
+            MIN(RowID)
+        FROM
+            cadastro_6970
+        GROUP BY
+            nome_completo,
+            endereco,
+            cidade
+    )
+
+
+
+
+
+
+
+
+
+
 SELECT * FROM agua where cpf = 306647133;
 SELECT * FROM `violencia`;
 SELECT * FROM `seguranca`;

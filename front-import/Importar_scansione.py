@@ -21,7 +21,7 @@ URI_PG = ''
 
 query = " SELECT * FROM Pessoa_Fisica \
         where  cep is null \
-        order by endereco, bairro LIMIT 40 "
+        order by endereco, bairro LIMIT 400 "
 
 qu = "update Pessoa_Fisica set cep = ? where  cpf = ? "; 
 

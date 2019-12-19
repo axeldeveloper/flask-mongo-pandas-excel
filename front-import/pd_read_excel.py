@@ -19,10 +19,14 @@ AGUA = "./provider/Agua.xlsx"
 SEGU = "./provider/Seguranca.xlsx"
 SEMI = "./provider/Seminario.xlsx"
 VIO  = "./provider/Violencia.xlsx"
+CID  = "./provider/cidadao.xlsx"
 
 con=Conexao_SQLLITE('nome')
 
-EXECELS = [AGUA, SEGU,  SEMI, VIO]
+
+#EXECELS = [AGUA, SEGU,  SEMI, VIO]
+
+EXECELS = [CID]
 #EXECELS = [SEMI]
 for row in EXECELS:
     print(row)
