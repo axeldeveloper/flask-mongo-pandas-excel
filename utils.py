@@ -8,7 +8,9 @@ import datetime
 import  sqlite3
 import sys
 from locale import normalize
+
 from pymongo import MongoClient
+
 from pymongo.errors import ConnectionFailure
 
 """
